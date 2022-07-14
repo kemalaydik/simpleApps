@@ -8,7 +8,7 @@ function App() {
 		const mid = ~~(str.length / 2);
 		const end = str.length - 1;
 		for (let i = 0; i < mid; i++) {
-			if (str[i] !== str[end - i]) return false;
+			if (str[i].toLowerCase() === str[end - i].toLowerCase()) return false;
 		}
 		return true;
 	}
