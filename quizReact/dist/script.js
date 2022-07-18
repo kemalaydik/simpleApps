@@ -1,13 +1,12 @@
 'use strict';
 const { useState, useEffect } = React;
-console.log(2);
 
 function App() {
 	const [count, setCount] = useState(0);
 	const vowels = 'aeıioöuü';
 
 	return (
-		<div className='flex items-center justify-center h-screen bg-gradient-to-r from-green-300 via-red-500 to-green-600'>
+		<div className='flex items-center justify-center h-screen bg-gradient-to-r from-green-300 via-blue-500 to-purple-600'>
 			<div className='relative'>
 				<input
 					onChange={e => vowels.includes(e.target.value.slice(-1)) && setCount(count + 1)}
